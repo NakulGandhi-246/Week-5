@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+        }
+        .navigation{
+            font-size: 20px;
+            display: flex;
+        }
+        li{
+            list-style: none;
+            padding: 20px 23px;
+        }
+        section{
+            height: 344px;
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h1{
+            font-size: 3rem;
+        }
+        p{
+            text-align: center;
+        }
+        section::before{
+            content: "hello"
+        }
+        section::after{
+            content: "normal"
+        }
+        h1::first-letter{
+            color: blue;
+        }
+        p::first-line{
+            color: aqua;
+        }
+        input::placeholder{
+            color: blue;
+        }
+        ::selection{
+            color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact</li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h1>Hello This is a heading tag</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem obcaecati distinctio accusantium facilis ut provident rem sit vel porro odio deserunt voluptatem libero officia iste, quasi necessitatibus rerum! Aspernatur, inventore.</p>
+        </section>
+        <hr>
+        <input type="text" id="text" placeholder="enter your name">
+</body>
+</html>
