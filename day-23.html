@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Selectors</title>
+    <style>
+        input[type=text]{
+            color: blue;
+        }
+        h1 ~ p {
+            color: blue;
+            background-color: greenyellow;
+        }
+        a:visited{
+            color: yellow;
+        }
+        a:link{
+            color: aqua;
+        }
+        a:active{
+            color: green;
+        }
+        a:hover{
+            color: black;
+        }
+        input:focus-within{
+            color: hotpink;
+        }
+        input:focus-visible{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>hello</h1>
+    <p>this</p>
+    <a href="https:www.google.com">google</a>
+    <a href="https:www.facebook.com">head</a>
+    <br>
+    <input type="text" name="" id="">
+</body>
+</html>
